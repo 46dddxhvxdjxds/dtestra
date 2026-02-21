@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | WEDDING OPERA</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Mukta:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        header {
+            position: relative;
+            background: transparent;
+            top: 0;
+            padding: 20px 0;
+        }
+
+        .logo-pill,
+        .nav-pill {
+            box-shadow: none;
+            border: 1px solid #eee;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-split">
+            <!-- Left Pill: Logo -->
+            <div class="logo-pill">
+                <a href="index.html" class="logo">WEDDING OPERA</a>
+            </div>
+
+            <!-- Right Pill: Nav + Contact + Login -->
+            <div class="nav-pill" id="mobileNavPill">
+                <div class="mobile-bottom-brand">
+                    <a href="index.html">WEDDING OPERA</a>
+                    <button class="hamburger-btn" onclick="toggleMobileMenu()">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+                <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="gallery.html" style="color: #C0B87A;">Gallery</a>
+                <a href="booking.html">Book Now</a>
+                <span class="phone-item"><i class="phone-icon"></i> +91 8800995485</span>
+                <a href="admin.html" class="btn-login-outline">Login</a>
+            </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="gallery section-padding">
+        <div class="container">
+            <h2 class="gallery-title text-center">MOMENTS CAPTURED</h2>
+            <p class="gallery-subtitle text-center">
+                Discover timeless celebrations and beautifully curated events held at WEDDING OPERA.
+            </p>
+
+            <!-- Filter Tabs -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" onclick="filterGallery('all')">All</button>
+                <button class="filter-btn" onclick="filterGallery('exterior')">Exterior </button>
+                <button class="filter-btn" onclick="filterGallery('decor')">Decor</button>
+                <button class="filter-btn" onclick="filterGallery('dining')">Dining</button>
+                <button class="filter-btn" onclick="filterGallery('lounge')">Lounge</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- Exterior -->
+                <div class="gallery-item category-exterior">
+                    <img src="all images/exterior-1.jpg" alt="Exterior View 1">
+                </div>
+                <!-- Decor -->
+                <div class="gallery-item category-decor">
+                    <img src="all images/decor-1.jpg" alt="Decor View 1">
+                </div>
+                <!-- Dining -->
+                <div class="gallery-item category-dining">
+                    <img src="all images/dining-1.jpg" alt="Dining View 1">
+                </div>
+                <!-- Lounge -->
+                <div class="gallery-item category-lounge">
+                    <img src="all images/lounge-1.png" alt="Lounge View 1">
+                </div>
+                <div class="gallery-item category-lounge">
+                    <img src="all images/lounge-2.jpg" alt="Lounge View 2">
+                </div>
+                <div class="gallery-item category-lounge">
+                    <img src="all images/lounge-3.jpg" alt="Lounge View 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer-section">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand -->
+                <div class="footer-col">
+                    <h3 class="footer-logo">WEDDING OPERA</h3>
+                    <p>Blending luxury, tradition, and exceptional service to craft truly unforgettable memories.</p>
+                </div>
+
+                <!-- Column 2: Links -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                        <li><a href="admin.html">Admin Login</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact -->
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>Ch. Bhrama Singh Flyover, B-9, ring road, Lawrence Rd, near britannia chock, Dr Lohia
+                        Industrial Area, Rampura Industrial Area, Tri Nagar, Delhi, 110034</p>
+                    <p>+91 8800995485</p>
+                    <p>weddingopera@gmail.com</p>
+                </div>
+                <!-- Column 4: Map -->
+                <div class="footer-col" style="min-width: 300px;">
+                    <h4>Location Map</h4>
+                    <div class="footer-map-container" style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1544.1566371764373!2d77.1456663!3d28.6820691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03b505c1632b%3A0xef109bef6946259d!2sWedding%20Opera!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="180" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 WEDDING OPERA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
